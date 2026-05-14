@@ -1,0 +1,17 @@
+{
+  "name": "bahamut-e2e",
+  "version": "2.0.0",
+  "description": "巴哈姆特網站 E2E 自動化測試",
+  "scripts": {
+    "test": "node tests/bahamut.test.js",
+    "test:unit": "jest tests/unit/ --verbose",
+    "test:all": "npm run test:unit && npm test"
+  },
+  "dependencies": {
+    "selenium-manager": "*",
+    "selenium-webdriver": "^4.18.1"
+  },
+  "devDependencies": {
+    "jest": "^30.4.2"
+  }
+}
